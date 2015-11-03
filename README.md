@@ -10,3 +10,8 @@ The easiest way to use JTSidePanels is to copy the files into your Xcode project
 
 Alternatively, you can setup a git submodule and reference the files in your Xcode project. I prefer this method as it enables you to receive bug fixes/updates for the project.
 ` git submodule add https://github.com/itsProf/JTSidePanels.git JTSidePanels `
+
+License
+---
+
+The software in this repository is released under the MIT license.
