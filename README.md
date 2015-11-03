@@ -1,5 +1,5 @@
 # JTSidePanels
-Reveal side view controllers with pure Swift 2.0 code. JTSidePanels is a UIViewController container designed for presenting a center panel with revealable side panels - one to the left and one to the right.  The main inspiration for this project is JASidePanels found at https://github.com/gotosleep/JASidePanels/.
+Reveal side view controllers with pure Swift 2.0 code. JTSidePanels is a UIViewController container designed for presenting a center panel with revealable side panels - one to the left and one to the right. This is a Swift 2.0 port of the amazing JASidePanels project found at https://github.com/gotosleep/JASidePanels/.
 
 Usage
 ---
