@@ -19,7 +19,7 @@ Example using Storyboards
 1. Create a subclass of `JTSidePanelController`. In this example we call it `BaseViewController`.
 2. In the Storyboard designate the root view's owner as `BaseViewController`.
 3. Add more view controllers to your Storyboard, and give them identifiers `leftViewController`, `centerViewController` and `rightViewController`. Note that in Xcode the identifier is called "Storyboard ID" and can be found in the Identity inspector.
-5. Add a method `awakeFromNib` to `BaseViewController.swift` with the following code:
+5. Add the `awakeFromNib` method to `BaseViewController.swift` with the following code:
 
 ```swift
 override func awakeFromNib() {
