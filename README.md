@@ -11,6 +11,28 @@ The easiest way to use JTSidePanels is to copy the files into your Xcode project
 Alternatively, you can setup a git submodule and reference the files in your Xcode project. I prefer this method as it enables you to receive bug fixes/updates for the project.
 ` git submodule add https://github.com/itsProf/JTSidePanels.git JTSidePanels `
 
+I'm also working on making this available through CocoaPods.
+
+Example using Storyboards
+---
+
+1. Create a subclass of `JTSidePanelController`. In this example we call it `BaseViewController`.
+2. In the Storyboard designate the root view's owner as `BaseViewController`.
+3. Add more view controllers to your Storyboard, and give them identifiers `leftViewController`, `centerViewController` and `rightViewController`. Note that in Xcode the identifier is called "Storyboard ID" and can be found in the Identity inspector.
+5. Add a method `awakeFromNib` to `BaseViewController.swift` with the following code:
+
+```swift
+override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    leftPanel = storyboard?.instantiateViewControllerWithIdentifier("leftViewController")
+    centerPanel = storyboard?.instantiateViewControllerWithIdentifier("centerViewController")
+    rightPanel = storyboard?.instantiateViewControllerWithIdentifier("rightViewController")
+}
+```
+
+If you only need a left or a right panel, you can set only the one you need.
+
 License
 ---
 
